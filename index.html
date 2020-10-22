@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JakartaLTE - Free Admin templates Tailwind CSS</title>
     <link rel="stylesheet" href="dist/css/tailwind.min.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./dist/css/jakarta-lte.min.css" />
+    <link href="./dist/libs/boxicons/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100">
     <nav class="bg-white border-b border-gray-400">
@@ -26,31 +22,36 @@
             <li
               class="px-3 py-4 font-medium text-green-500 border-b-2 border-green-500"
             >
-              <a href="#"><i class="bx bx-home mr-1"></i>Home </a>
+              <a href="#" class="inline-flex items-center">
+                <i class="bx bx-home mr-2"></i>
+                Home
+              </a>
             </li>
             <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#"
-                ><i class="bx bx-notepad mr-1"></i>Pages
-                <i class="bx bx-chevron-down"></i
-              ></a>
+              <a href="#" class="inline-flex items-center">
+                <i class="bx bx-notepad mr-2"></i>Pages
+                <i class="bx bx-chevron-down"></i>
+              </a>
             </li>
             <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#"><i class="bx bx-user mr-1"></i>Dashboard</a>
+              <a href="#" class="inline-flex items-center"
+                ><i class="bx bx-user mr-2"></i>Dashboard</a
+              >
             </li>
             <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#"><i class="bx bx-alarm-exclamation mr-1"></i>Table</a>
+              <a href="#" class="inline-flex items-center"
+                ><i class="bx bx-alarm-exclamation mr-2"></i>Table</a
+              >
             </li>
             <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#"> <i class="bx bx-home mr-1"></i>Button</a>
+              <a href="#" class="inline-flex items-center">
+                <i class="bx bx-home mr-2"></i>Button</a
+              >
             </li>
             <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#"> <i class="bx bx-chart mr-1"></i>Chart</a>
-            </li>
-            <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#"> <i class="bx bx-comment mr-1"></i>Card</a>
-            </li>
-            <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#"> <i class="bx bx-comment mr-1"></i>UI Component</a>
+              <a href="#" class="inline-flex items-center">
+                <i class="bx bx-comment mr-2"></i>UI Component</a
+              >
             </li>
           </ul>
         </div>
@@ -83,17 +84,21 @@
             / Dashboard
           </h3>
           <div>
-            <h1 class="text-2xl mt-1 font-medium">Dashboard Apexchart</h1>
+            <h1 class="text-2xl mt-1 font-medium">Dashboard</h1>
           </div>
         </div>
         <div>
           <button
-            class="px-4 py-2 text-sm mx-2 border rounded bg-green-600 text-white"
+            class="px-4 py-2 border text-sm mx-1 border border-transparent rounded bg-green-600 text-white hover:bg-green-500 focus:outline-none focus:border-green-600 focus:shadow-outline-green active:bg-green-600 transition duration-150 ease-in-out inline-flex items-center"
           >
-            <i class="bx bx-world"></i> Publish
+            <i class="bx bx-world text-white mr-2 text-base"></i>
+            Publish
           </button>
-          <button class="px-4 py-2 text-sm mx-2 border rounded bg-white">
-            <i class="bx bx-plus"></i> Create
+          <button
+            class="px-4 py-2 border text-sm mx-1 border rounded bg-white hover:bg-gray-100 focus:outline-none focus:shadow-outline-white active:bg-white transition duration-150 ease-in-out inline-flex items-center"
+          >
+            <i class="bx bx-plus text-gray-700 mr-2 text-base"></i>
+            Create
           </button>
         </div>
       </div>

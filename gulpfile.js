@@ -6,6 +6,7 @@ const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
 const npmDist = require("gulp-npm-dist");
 const postcss = require("gulp-postcss");
+const { copyLibs } = require("gulp-copy-libs");
 
 // Compile src sass
 gulp.task("compile:sass", function () {
@@ -33,13 +34,33 @@ gulp.task("compile:js", function () {
 
 // Copy libs from node modules
 gulp.task("copy:libs", function () {
-  return gulp
-    .src(npmDist(), { base: "./node_modules" })
-    .pipe(rename(function(path) {
-      // Remove dist dir
-      path.dirname = path.dirname.replace(/\/dist/, '').replace(/\\dist/, '');
-    }))
-    .pipe(gulp.dest("./dist/libs"));
+  const libsConfig = [
+    {
+      outputDirectory: "dist/libs/boxicons/css",
+      inputFiles: "node_modules/boxicons/css/*.css",
+    },
+    {
+      outputDirectory: "dist/libs/boxicons/fonts",
+      inputFiles: "node_modules/boxicons/fonts/*.{eot,svg,ttf,woff,woff2}",
+    },
+  ];
+
+  return (
+    gulp
+      .src(npmDist(), { base: "./node_modules" })
+      .pipe(
+        rename(function (path) {
+          // Remove dist dir
+          path.dirname = path.dirname
+            .replace(/\/dist/, "")
+            .replace(/\\dist/, "");
+        })
+      )
+      .pipe(gulp.dest("./dist/libs"))
+
+      // Copy custom libs
+      .pipe(copyLibs(libsConfig))
+  );
 });
 
 // task build
