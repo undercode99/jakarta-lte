@@ -1,6 +1,6 @@
 JAKARTA LTE 
 ============================
-Free Admin Templates & Rich UI Components by Tailwind CSS
+Free and Open Source Admin Templates, Rich UI Kit base on Tailwind CSS
 
 ## Demo
 https://zeroblack-c.github.io/jakarta-lte/
