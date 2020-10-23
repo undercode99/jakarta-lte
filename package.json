@@ -26,6 +26,7 @@
     "tailwindcss": "^1.8.13"
   },
   "dependencies": {
+    "apexcharts": "^3.22.0",
     "boxicons": "^2.0.6",
     "jquery": "^3.5.1"
   }

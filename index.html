@@ -4,54 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JakartaLTE - Free Admin templates Tailwind CSS</title>
+    <!-- Tailwind css  -->
     <link rel="stylesheet" href="dist/css/tailwind.min.css" />
-    <link href="./dist/libs/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Box icon  -->
+    <link rel="stylesheet" href="./dist/libs/boxicons/css/boxicons.min.css" />
+    <!-- Apexchart plugins -->
+    <link rel="stylesheet" href="./dist/libs/apexcharts/apexcharts.css" />
+
+    <!-- Jquery -->
+    <script src="./dist/libs/jquery/jquery.slim.min.js"></script>
+    <!-- Apexchart plugins js -->
+    <script src="./dist/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- Core js -->
+    <script src="./dist/js/jakarta-lte.min.js"></script>
   </head>
   <body class="bg-gray-100">
     <nav class="bg-white border-b border-gray-400">
       <div
         class="flex items-center justify-between flex-wrap mx-auto max-w-screen-xl"
       >
-        <div class="flex items-center mx-2">
-          <div>
-            <a href="#" class="font-bold text-xl py-3 pr-6"
-              >Jakarta<span class="font-light">LTE</span></a
+        <div class="flex items-center mx-2 py-3 md:py-0">
+          <div class="flex items-center">
+            <button class="md:hidden mx-3">
+              <i class="text-2xl bx bx-menu"></i>
+            </button>
+            <a href="#" class="font-bold text-xl pr-6"
+              >Jakarta<span class="text-gray-500 font-medium">LTE</span></a
             >
           </div>
-          <ul class="flex text-sm font-normal">
+          <ul class="text-sm font-normal hidden md:flex">
             <li
-              class="px-3 py-4 font-medium text-green-500 border-b-2 border-green-500"
+              class="mx-3 py-4 font-medium text-green-500 border-b border-green-500"
             >
               <a href="#" class="inline-flex items-center">
-                <i class="bx bx-home mr-2"></i>
+                <i class="bx bx-home mr-1"></i>
                 Home
               </a>
             </li>
-            <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
+            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
               <a href="#" class="inline-flex items-center">
-                <i class="bx bx-notepad mr-2"></i>Pages
-                <i class="bx bx-chevron-down"></i>
+                <i class="bx bx-pie-chart-alt mr-1"></i>Dashboard
+                <i class="bx bx-chevron-down ml-1"></i>
               </a>
             </li>
-            <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#" class="inline-flex items-center"
-                ><i class="bx bx-user mr-2"></i>Dashboard</a
-              >
-            </li>
-            <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#" class="inline-flex items-center"
-                ><i class="bx bx-alarm-exclamation mr-2"></i>Table</a
-              >
-            </li>
-            <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
+            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
               <a href="#" class="inline-flex items-center">
-                <i class="bx bx-home mr-2"></i>Button</a
-              >
+                <i class="bx bx-outline mr-1"></i>UI Component
+
+                <i class="bx bx-chevron-down ml-1"></i>
+              </a>
             </li>
-            <li class="px-3 py-4 text-gray-600 hover:text-gray-900">
+            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
               <a href="#" class="inline-flex items-center">
-                <i class="bx bx-comment mr-2"></i>UI Component</a
-              >
+                <i class="bx bx-book mr-1"></i>Pages
+                <i class="bx bx-chevron-down ml-1"></i>
+              </a>
+            </li>
+            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
+              <a href="#" class="inline-flex items-center"
+                ><i class="bx bx-dock-right mr-1"></i>Layout
+                <i class="bx bx-chevron-down ml-1"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -68,14 +81,14 @@
             src="/dist/avatar/nis.png"
             alt=""
           />
-          <p class="text-left text-sm text-gray-700">
+          <p class="text-left text-sm text-gray-700 hidden md:block">
             Zero Black Coder <i class="bx bx-chevron-down"></i>
           </p>
         </a>
       </div>
     </nav>
     <div class="max-w-screen-xl mx-auto">
-      <div class="mt-4 mx-2 flex justify-between items-center">
+      <div class="mt-4 mx-2 md:flex justify-between items-center">
         <div>
           <h3 class="text-gray-600 text-sm">
             <a href="" class="text-green-600"
@@ -84,10 +97,12 @@
             / Dashboard
           </h3>
           <div>
-            <h1 class="text-2xl mt-1 font-medium">Dashboard</h1>
+            <h1 class="text-2xl mt-0 font-medium">
+              Dashboard Product Performance
+            </h1>
           </div>
         </div>
-        <div>
+        <div class="md:pt-0 pt-4">
           <button
             class="px-4 py-2 border text-sm mx-1 border border-transparent rounded bg-green-600 text-white hover:bg-green-500 focus:outline-none focus:border-green-600 focus:shadow-outline-green active:bg-green-600 transition duration-150 ease-in-out inline-flex items-center"
           >
@@ -106,54 +121,198 @@
       <!-- Content -->
       <div class="mt-3">
         <div class="flex flex-wrap mb-2">
-          <div class="md:w-1/4 w-full">
-            <div class="bg-white my-2 mx-2 border rounded-md p-2 h-32"></div>
+          <div class="lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="bg-white my-2 mx-2 border rounded-md flex-col flex h-40"
+            >
+              <div class="px-4 py-3 pb-0 flex justify-between flex-auto">
+                <div>
+                  <div class="text-gray-600 text-sm">Total Revenue</div>
+                  <div class="text-3xl inline font-medium text-gray-700">
+                    $2,820
+                  </div>
+                  <span class="text-sm text-green-500"
+                    >+4.61% <i class="bx bx-up-arrow-alt"></i
+                  ></span>
+                </div>
+                <div>
+                  <a
+                    href=""
+                    class="inline-flex text-sm items-center text-gray-700"
+                  >
+                    <span>Last 30 days</span>
+                    <i
+                      class="inline-flex items-center bx bx-chevron-down ml-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <div id="chart-sparkline-1"></div>
+            </div>
           </div>
-          <div class="md:w-1/4 w-full">
-            <div class="bg-white my-2 mx-2 border rounded-md p-2 h-32"></div>
+          <div class="lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="bg-white my-2 mx-2 border rounded-md flex-col flex h-40"
+            >
+              <div class="px-4 py-3 pb-0 flex justify-between flex-auto">
+                <div>
+                  <div class="text-gray-600 text-sm">Sales Product</div>
+                  <div class="text-3xl inline font-medium text-gray-700">
+                    760
+                  </div>
+                  <span class="text-sm text-green-500"
+                    >+5.66% <i class="bx bx-up-arrow-alt"></i
+                  ></span>
+                </div>
+                <div>
+                  <a
+                    href=""
+                    class="inline-flex items-center text-gray-700 text-sm"
+                  >
+                    <span>Last 30 days</span>
+                    <i
+                      class="inline-flex items-center bx bx-chevron-down ml-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <div id="chart-sparkline-2" class="p-3 px-2"></div>
+            </div>
           </div>
-          <div class="md:w-1/4 w-full">
-            <div class="bg-white my-2 mx-2 border rounded-md p-2 h-32"></div>
+          <div class="lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="bg-white my-2 mx-2 border rounded-md flex-col flex h-40"
+            >
+              <div class="px-4 py-3 pb-0 flex justify-between flex-auto">
+                <div>
+                  <div class="text-gray-600 text-sm">User Activity</div>
+                  <div class="text-3xl inline font-medium text-gray-700">
+                    2,169K
+                  </div>
+                  <span class="text-sm text-red-500"
+                    >-23.24% <i class="bx bx-down-arrow-alt"></i
+                  ></span>
+                </div>
+                <div>
+                  <a
+                    href=""
+                    class="inline-flex items-center text-gray-700 text-sm"
+                  >
+                    <span>Last 30 days</span>
+                    <i
+                      class="inline-flex items-center bx bx-chevron-down ml-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <div id="chart-sparkline-3" class="p-3 px-2"></div>
+            </div>
           </div>
-          <div class="md:w-1/4 w-full">
-            <div class="bg-white my-2 mx-2 border rounded-md p-2 h-32"></div>
+          <div class="lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="bg-white my-2 mx-2 border rounded-md flex-col flex h-40"
+            >
+              <div class="px-4 py-3 pb-0 flex justify-between flex-auto">
+                <div>
+                  <div class="text-gray-600 text-sm">Feedback</div>
+                  <div class="text-3xl inline font-medium text-gray-700">
+                    456
+                  </div>
+                </div>
+                <div>
+                  <a
+                    href=""
+                    class="inline-flex items-center text-gray-700 text-sm"
+                  >
+                    <span>Last 30 days</span>
+                    <i
+                      class="inline-flex items-center bx bx-chevron-down ml-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <div class="px-4 pb-6">
+                <div class="flex justify-between mb-2">
+                  <div class="text-gray-700 text-sm"><b>83%</b> Good Feedback</div>
+                  <div>
+                    <span class="text-sm text-green-500"
+                      >2.75% <i class="bx bx-up-arrow-alt"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="px-auto bg-gray-200">
+                  <div class="bg-green-500 py-1" style="width: 83%"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="flex flex-wrap mb-2">
           <div class="md:w-2/3 w-full">
-            <div
-              class="bg-white my-2 mx-2 border rounded-md p-2"
-              style="height: 22rem"
-            ></div>
+            <div class="bg-white my-2 mx-2 border rounded-md px-2 py-4">
+              <div class="flex justify-between px-2">
+                <div>
+                  <h1 class="text-2xl font-medium inline">1875</h1>
+                  <span class="text-sm text-green-500"
+                    >2.75% <i class="bx bx-up-arrow-alt"></i
+                  ></span>
+                  <div class="text-gray-700">Sales Product Categories</div>
+                </div>
+                <div>
+                  <button
+                    class="py-1 px-4 rounded text-sm text-green-600 border border-green-600"
+                  >
+                    Last 60 days
+                    <i
+                      class="inline-flex items-center bx bx-chevron-down ml-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+              <div id="chart-bar" class="flex-auto"></div>
+            </div>
           </div>
           <div class="md:w-1/3 w-full">
-            <div
-              class="bg-white my-2 mx-2 border rounded-md p-2"
-              style="height: 22rem"
-            ></div>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap mb-2">
-          <div class="md:w-1/2 w-full">
-            <div
-              class="bg-white my-2 mx-2 border rounded-md p-2"
-              style="height: 22rem"
-            ></div>
-          </div>
-          <div class="md:w-1/2 w-full">
-            <div
-              class="bg-white my-2 mx-2 border rounded-md p-2"
-              style="height: 22rem"
-            ></div>
-          </div>
-        </div>
-        <div class="flex flex-wrap mb-2">
-          <div class="w-full">
-            <div
-              class="bg-white my-2 mx-2 border rounded-md p-2"
-              style="height: 22rem"
-            ></div>
+            <div class="bg-white my-2 mx-2 border rounded-md px-2 py-4">
+              <div class="text-gray-700 px-2 text-xl">Top country sales</div>
+              <div id="chart-pie-1" class="flex-auto"></div>
+              <table class="w-full text-md bg-white rounded mb-3">
+                <tbody>
+                  <tr>
+                    <td class="px-4 py-1 text-gray-700 border-b w-8 border-gray-400">1</td>
+                    <td class="px-4 py-1 text-gray-700 border-b border-gray-400">USA</td>
+                    <td class="px-4 py-1 border-b border-gray-400 text-green-500">+ 10% 
+                      <i
+                        class="bx bx-up-arrow-alt ml-1"
+                      ></i></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-1 text-gray-700 border-b w-8 border-gray-400">2</td>
+                    <td class="px-4 py-1 text-gray-700 border-b border-gray-400">India</td>
+                    <td class="px-4 py-1 border-b border-gray-400 text-red-500"> - 17% 
+                      <i
+                        class="bx bx-down-arrow-alt ml-1"
+                      ></i></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-1 text-gray-700 border-b w-8 border-gray-400">3</td>
+                    <td class="px-4 py-1 text-gray-700 border-b border-gray-400">Japan</td>
+                    <td class="px-4 py-1 border-b border-gray-400 text-green-500">+ 20% 
+                      <i
+                        class="bx bx-up-arrow-alt ml-1"
+                      ></i></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-1 text-gray-700 border-b w-8 border-gray-400">4</td>
+                    <td class="px-4 py-1 text-gray-700 border-b border-gray-400">Indonesia</td>
+                    <td class="px-4 py-1 border-b border-gray-400 text-green-500">+ 11% 
+                      <i
+                        class="bx bx-up-arrow-alt ml-1"
+                      ></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -161,9 +320,633 @@
 
     <div class="max-w-screen-xl mx-auto">
       <div class="mt-4 mx-2 flex justify-between items-center">
-        <div><b>MIT License</b> - Copyright (c) 2020 Under-X</div>
+        <div>MIT License- Copyright (c) 2020 <b>Under-X</b></div>
       </div>
     </div>
-    <script src="./dist/libs/jquery/jquery.slim.min.js"></script>
+    <script>
+      var options = {
+        chart: {
+          type: "area",
+          fontFamily: "inherit",
+          height: 50,
+          sparkline: {
+            enabled: true,
+          },
+          animations: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+
+        fill: {
+          opacity: 0.16,
+          type: "solid",
+        },
+        stroke: {
+          width: 2,
+          lineCap: "round",
+          curve: "smooth",
+        },
+
+        series: [
+          {
+            name: "Revenue",
+            data: [
+              31,
+              37,
+              39,
+              62,
+              51,
+              35,
+              41,
+              35,
+              27,
+              27,
+              53,
+              61,
+              27,
+              54,
+              43,
+              19,
+              46,
+              39,
+              62,
+              51,
+              66,
+              70,
+              82,
+            ],
+          },
+        ],
+
+        grid: {
+          strokeDashArray: 4,
+        },
+        xaxis: {
+          labels: {
+            padding: 0,
+          },
+          tooltip: {
+            enabled: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          type: "datetime",
+        },
+        yaxis: {
+          labels: {
+            padding: 4,
+          },
+        },
+        labels: [
+          "2020-06-28",
+          "2020-06-29",
+          "2020-06-30",
+          "2020-07-01",
+          "2020-07-02",
+          "2020-07-03",
+          "2020-07-04",
+          "2020-07-05",
+          "2020-07-06",
+          "2020-07-07",
+          "2020-07-08",
+          "2020-07-09",
+          "2020-07-10",
+          "2020-07-11",
+          "2020-07-12",
+          "2020-07-13",
+          "2020-07-14",
+          "2020-07-15",
+          "2020-07-16",
+          "2020-07-17",
+          "2020-07-18",
+          "2020-07-19",
+          "2020-07-20",
+        ],
+        colors: ["#48bb78"],
+        legend: {
+          show: false,
+        },
+      };
+      var chart1 = new ApexCharts(
+        document.querySelector("#chart-sparkline-1"),
+        options
+      );
+      chart1.render();
+
+      var options2 = {
+        chart: {
+          type: "bar",
+          fontFamily: "inherit",
+          height: 50,
+          sparkline: {
+            enabled: true,
+          },
+          animations: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+
+        fill: {
+          opacity: 0.7,
+          type: "solid",
+        },
+        stroke: {
+          width: 1,
+          lineCap: "round",
+          curve: "smooth",
+        },
+
+        series: [
+          {
+            name: "Sales",
+            data: [
+              31,
+              37,
+              39,
+              62,
+              51,
+              35,
+              41,
+              35,
+              27,
+              27,
+              53,
+              61,
+              27,
+              54,
+              43,
+              120,
+              46,
+              50,
+              62,
+              51,
+              90,
+              70,
+              82,
+            ],
+          },
+        ],
+
+        grid: {
+          strokeDashArray: 4,
+        },
+        xaxis: {
+          labels: {
+            padding: 0,
+          },
+          tooltip: {
+            enabled: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          type: "datetime",
+        },
+        yaxis: {
+          labels: {
+            padding: 4,
+          },
+        },
+        labels: [
+          "2020-06-28",
+          "2020-06-29",
+          "2020-06-30",
+          "2020-07-01",
+          "2020-07-02",
+          "2020-07-03",
+          "2020-07-04",
+          "2020-07-05",
+          "2020-07-06",
+          "2020-07-07",
+          "2020-07-08",
+          "2020-07-09",
+          "2020-07-10",
+          "2020-07-11",
+          "2020-07-12",
+          "2020-07-13",
+          "2020-07-14",
+          "2020-07-15",
+          "2020-07-16",
+          "2020-07-17",
+          "2020-07-18",
+          "2020-07-19",
+          "2020-07-20",
+        ],
+        colors: ["#48bb78"],
+        legend: {
+          show: false,
+        },
+      };
+      var chart2 = new ApexCharts(
+        document.querySelector("#chart-sparkline-2"),
+        options2
+      );
+      chart2.render();
+
+      var options3 = {
+        chart: {
+          type: "line",
+          fontFamily: "inherit",
+          height: 50,
+          sparkline: {
+            enabled: true,
+          },
+          animations: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+
+        fill: {
+          opacity: 0.7,
+          type: "solid",
+        },
+        stroke: {
+          width: [2, 1],
+          dashArray: [0, 3],
+          lineCap: "round",
+          curve: "smooth",
+        },
+
+        series: [
+          {
+            name: "Last month",
+            data: [
+              31,
+              37,
+              39,
+              62,
+              51,
+              35,
+              14,
+              35,
+              27,
+              27,
+              21,
+              61,
+              27,
+              54,
+              43,
+              120,
+              46,
+              50,
+              62,
+              121,
+              90,
+              70,
+              82,
+            ],
+          },
+
+          {
+            name: "This month",
+            data: [
+              91,
+              58,
+              90,
+              79,
+              83,
+              119,
+              78,
+              88,
+              129,
+              71,
+              90,
+              116,
+              94,
+              110,
+              103,
+              111,
+              119,
+              79,
+              94,
+              124,
+              81,
+              85,
+              82,
+            ],
+          },
+        ],
+
+        grid: {
+          strokeDashArray: 4,
+        },
+        xaxis: {
+          labels: {
+            padding: 0,
+          },
+          tooltip: {
+            enabled: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          type: "datetime",
+        },
+        yaxis: {
+          labels: {
+            padding: 4,
+          },
+        },
+        labels: [
+          "2020-06-28",
+          "2020-06-29",
+          "2020-06-30",
+          "2020-07-01",
+          "2020-07-02",
+          "2020-07-03",
+          "2020-07-04",
+          "2020-07-05",
+          "2020-07-06",
+          "2020-07-07",
+          "2020-07-08",
+          "2020-07-09",
+          "2020-07-10",
+          "2020-07-11",
+          "2020-07-12",
+          "2020-07-13",
+          "2020-07-14",
+          "2020-07-15",
+          "2020-07-16",
+          "2020-07-17",
+          "2020-07-18",
+          "2020-07-19",
+          "2020-07-20",
+        ],
+        colors: ["#48bb78"],
+        legend: {
+          show: false,
+        },
+      };
+      var chart3 = new ApexCharts(
+        document.querySelector("#chart-sparkline-3"),
+        options3
+      );
+      chart3.render();
+
+      // chart
+      var options_bar = {
+        series: [
+          {
+            name: "Admin Template",
+            data: [
+              91,
+              58,
+              90,
+              79,
+              83,
+              119,
+              78,
+              88,
+              129,
+              71,
+              90,
+              116,
+              94,
+              110,
+              103,
+              111,
+              119,
+              79,
+              94,
+              124,
+              81,
+              85,
+              82,
+              79,
+              94,
+              124,
+              119,
+              79,
+              94,
+              124,
+              81,
+              90,
+              116,
+            ],
+          },
+          {
+            name: "Themes Tailwindcss",
+            data: [
+              31,
+              37,
+              39,
+              62,
+              51,
+              35,
+              14,
+              35,
+              27,
+              27,
+              21,
+              61,
+              27,
+              54,
+              43,
+              120,
+              46,
+              50,
+              62,
+              121,
+              90,
+              70,
+              82,
+              61,
+              27,
+              54,
+              39,
+              62,
+              51,
+              35,
+              14,
+              27,
+              21,
+              61,
+            ],
+          },
+          {
+            name: "Wordpress Themes",
+            data: [
+              31,
+              37,
+              39,
+              62,
+              51,
+              35,
+              41,
+              35,
+              27,
+              27,
+              53,
+              61,
+              27,
+              54,
+              43,
+              120,
+              46,
+              50,
+              62,
+              51,
+              90,
+              70,
+              82,
+              90,
+              70,
+              82,
+              35,
+              27,
+              27,
+              53,
+              61,
+              53,
+              61,
+              27,
+            ],
+          },
+        ],
+        chart: {
+          type: "bar",
+          height: 350,
+          stacked: true,
+          toolbar: {
+            show: false,
+          },
+          zoom: {
+            enabled: false,
+          },
+        },
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              legend: {
+                position: "bottom",
+                offsetX: -10,
+                offsetY: 0,
+              },
+            },
+          },
+        ],
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: "50%",
+          },
+        },
+
+        dataLabels: {
+          enabled: false,
+        },
+        xaxis: {
+          type: "datetime",
+          categories: [
+            "2020-06-28",
+            "2020-06-29",
+            "2020-06-30",
+            "2020-07-01",
+            "2020-07-02",
+            "2020-07-03",
+            "2020-07-04",
+            "2020-07-05",
+            "2020-07-06",
+            "2020-07-07",
+            "2020-07-08",
+            "2020-07-09",
+            "2020-07-10",
+            "2020-07-11",
+            "2020-07-12",
+            "2020-07-13",
+            "2020-07-14",
+            "2020-07-15",
+            "2020-07-16",
+            "2020-07-17",
+            "2020-07-18",
+            "2020-07-19",
+            "2020-07-20",
+            "2020-07-21",
+            "2020-07-22",
+            "2020-07-23",
+            "2020-07-24",
+            "2020-07-25",
+            "2020-07-26",
+            "2020-07-27",
+            "2020-07-28",
+            "2020-07-29",
+            "2020-07-30",
+          ],
+        },
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ["transparent"],
+        },
+        fill: {
+          opacity: 1,
+        },
+        legend: {
+          position: "bottom",
+        },
+        // colors: ["#f6ad55","#4299e1","#48bb78"],
+        colors: ["#48bb78", "#4299e1", "#fbd38d"],
+      };
+
+      var chart1 = new ApexCharts(
+        document.querySelector("#chart-bar"),
+        options_bar
+      );
+      chart1.render();
+
+      var options_chart_2 = {
+        series: [30, 18, 15, 8],
+        chart: {
+          type: "donut",
+          width: "100%",
+          height: 400,
+        },
+        plotOptions: {
+          pie: {
+            customScale: 0.85,
+            donut: {
+              size: "67%",
+            },
+          },
+          stroke: {
+            colors: undefined,
+          },
+        },
+        colors: ["#2f855a", "#38a169", "#48bb78", "#68d391"],
+
+        labels: ["USA", "India", "Japan", "Indonesia"],
+
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              chart: {
+                width: 200,
+              },
+              legend: {
+                position: "bottom",
+              },
+            },
+          },
+        ],
+      };
+
+      var chart = new ApexCharts(
+        document.querySelector("#chart-pie-1"),
+        options_chart_2
+      );
+      chart.render();
+    </script>
   </body>
 </html>

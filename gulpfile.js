@@ -71,6 +71,8 @@ gulp.task(
   "serve",
   gulp.series("build", function () {
     browserSync.init({ server: "." });
+    gulp.watch("./src/js/**/*.js",gulp.series("compile:js"))
+    gulp.watch("./src/scss/**/*.scss",gulp.series("compile:sass"))
     gulp.watch("./*.html").on("change", browserSync.reload);
   })
 );
