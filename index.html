@@ -7,17 +7,23 @@
       Jakarta LTE - Free and Open Source Admin Templates, Rich UI Kit base on
       Tailwind CSS
     </title>
+
     <!-- Tailwind css  -->
     <link rel="stylesheet" href="./dist/css/tailwind.min.css" />
     <!-- Box icon  -->
     <link rel="stylesheet" href="./dist/libs/boxicons/css/boxicons.min.css" />
     <!-- Apexchart plugins -->
-    <link rel="stylesheet" href="./dist/libs/apexcharts/apexcharts.css" />
+    <link rel="stylesheet" href="./dist/libs/apexcharts/apexcharts.min.js" />
 
+    <!-- Jquery plugin js -->
+    <script src="./dist/libs/jquery/jquery.slim.min.js"></script>
     <!-- Apexchart plugins js -->
     <script src="./dist/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- Core js -->
+    <script src="./dist/js/jakarta-lte.min.js"></script>
   </head>
   <body class="bg-gray-100">
+    <!-- Nabar -->
     <nav class="bg-white border-b border-gray-400">
       <div
         class="flex items-center justify-between flex-wrap mx-auto max-w-screen-xl"
@@ -40,34 +46,206 @@
                 Home
               </a>
             </li>
-            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#" class="inline-flex items-center">
-                <i class="bx bx-pie-chart-alt mr-1"></i>Dashboard
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 inline-block relative text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex text-sm items-center text-gray-600 dropdown-toggle"
+                data-dropdown="dropdownMenuDashboard"
+              >
+                <i class="bx bx-pie-chart-alt mr-1"></i>
+                <span>Dashboard</span>
                 <i class="bx bx-chevron-down ml-1"></i>
               </a>
-            </li>
-            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#" class="inline-flex items-center">
-                <i class="bx bx-outline mr-1"></i>UI Component
 
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="dropdownMenuDashboard"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dashboard v1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dashboard v2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dashboard v3</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 relative inline-block text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center dropdown-toggle"
+                data-dropdown="uiComponentMenu"
+              >
+                <i class="bx bx-outline mr-1"></i>
+                <span>UI Component</span>
                 <i class="bx bx-chevron-down ml-1"></i>
               </a>
+
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="uiComponentMenu"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Card</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Chart</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Button</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dropdown</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Navbar</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Maps</a
+                    >
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#" class="inline-flex items-center">
-                <i class="bx bx-book mr-1"></i>Pages
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 relative inline-block text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center dropdown-toggle"
+                data-dropdown="pagesNav"
+              >
+                <i class="bx bx-book mr-1"></i>
+                <span>Pages</span>
                 <i class="bx bx-chevron-down ml-1"></i>
               </a>
+
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="pagesNav"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Login</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Register</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >User Profile</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >User Settings</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Blog</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Timeline</a
+                    >
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="mx-3 py-4 text-gray-600 hover:text-gray-900">
-              <a href="#" class="inline-flex items-center"
-                ><i class="bx bx-dock-right mr-1"></i>Layout
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 relative inline-block text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center dropdown-toggle"
+                data-dropdown="layoutNav"
+                ><i class="bx bx-dock-right mr-1"></i>
+                <span> Layout</span>
                 <i class="bx bx-chevron-down ml-1"></i
               ></a>
+
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="layoutNav"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Vertical</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Vertical fluid</a
+                    >
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-        <a class="flex items-center mx-2" href="">
+
+        <div class="flex items-center">
           <button class="mt-1 relative mx-2">
             <i class="bx bx-bell text-xl text-gray-600"></i>
             <span
@@ -75,18 +253,58 @@
               class="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full dark:border-gray-800"
             ></span>
           </button>
-          <img
-            class="w-8 h-8 mx-2 rounded-full object-cover"
-            src="./dist/avatar/nis.png"
-            alt="Avatar"
-          />
-          <p class="text-left text-sm text-gray-700 hidden md:block">
-            Zero Black Coder <i class="bx bx-chevron-down"></i>
-          </p>
-        </a>
+
+          <div class="inline-block relative text-left">
+            <a
+              class="flex items-center mx-2 dropdown-toggle"
+              href=""
+              data-dropdown="dropDownMenu"
+            >
+              <img
+                class="w-8 h-8 mx-2 rounded-full object-cover"
+                src="./dist/avatar/nis.png"
+                alt="Avatar"
+              />
+              <p class="text-left text-sm text-gray-700 hidden md:block">
+                Zero Black Coder <i class="bx bx-chevron-down"></i>
+              </p>
+            </a>
+
+            <div
+              class="origin-top-right absolute right-0 mt-3 z-56 w-56 rounded-md shadow-lg hidden"
+              id="dropDownMenu"
+            >
+              <div
+                class="rounded-md bg-white shadow-xs"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="options-menu"
+              >
+                <div class="py-1">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                    role="menuitem"
+                    >Settings</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                    role="menuitem"
+                    >Logout</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
+    <!-- End navbar -->
+
+    <!-- Wraper -->
     <div class="max-w-screen-xl mx-auto">
+      <!-- Title -->
       <div class="mt-4 mx-2 md:flex justify-between items-center">
         <div>
           <h3 class="text-gray-600 text-sm">
@@ -114,9 +332,11 @@
           </button>
         </div>
       </div>
+      <!-- End title -->
 
       <!-- Content -->
       <div class="mt-3">
+        <!-- Content chart 1 -->
         <div class="flex flex-wrap mb-2">
           <div class="lg:w-1/4 md:w-1/2 w-full">
             <div
@@ -125,15 +345,52 @@
               <div class="px-4 py-3 pb-0 flex-auto">
                 <div class="flex justify-between">
                   <div class="text-gray-600 text-sm">Total Revenue</div>
+                  <div class="inline-block relative text-left">
                     <a
                       href=""
-                      class="inline-flex text-sm items-center text-gray-600"
+                      class="inline-flex text-sm items-center text-gray-600 dropdown-toggle"
+                      data-dropdown="dropdownRevenue"
                     >
                       <span>Last 30 days</span>
                       <i
                         class="inline-flex items-center bx bx-chevron-down ml-1"
                       ></i>
                     </a>
+                    <div
+                      class="origin-top-right absolute right-0 mt-1 z-10 w-40 rounded-md shadow-lg hidden"
+                      id="dropdownRevenue"
+                    >
+                      <div
+                        class="rounded-md bg-white shadow-xs"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="options-menu"
+                      >
+                        <div class="py-1">
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Today</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 7 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 bg-gray-200 text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 30 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 1 Year</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <div class="text-3xl inline font-medium text-gray-700">
@@ -154,15 +411,53 @@
               <div class="px-4 py-3 pb-0 flex-auto">
                 <div class="pb-0 flex justify-between">
                   <div class="text-gray-600 text-sm">Sales Product</div>
+                  <div class="inline-block relative text-left">
                     <a
                       href=""
-                      class="inline-flex items-center text-gray-600 text-sm"
+                      class="inline-flex items-center text-gray-600 text-sm dropdown-toggle"
+                      data-dropdown="dropdownSalesProduct"
                     >
                       <span>Last 30 days</span>
                       <i
                         class="inline-flex items-center bx bx-chevron-down ml-1"
                       ></i>
                     </a>
+
+                    <div
+                      class="origin-top-right absolute right-0 mt-1 z-10 w-40 rounded-md shadow-lg hidden"
+                      id="dropdownSalesProduct"
+                    >
+                      <div
+                        class="rounded-md bg-white shadow-xs"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="options-menu"
+                      >
+                        <div class="py-1">
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Today</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 7 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 bg-gray-200 text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 30 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 1 Year</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="text-3xl inline font-medium text-gray-700">760</div>
@@ -180,15 +475,53 @@
               <div class="px-4 py-3 pb-0 flex-auto">
                 <div class="flex justify-between flex-auto">
                   <div class="text-gray-600 text-sm">User Activity</div>
+                  <div class="relative inline-block text-left">
                     <a
                       href=""
-                      class="inline-flex items-center text-gray-600 text-sm"
+                      class="inline-flex items-center text-gray-600 text-sm dropdown-toggle"
+                      data-dropdown="dropdownUserActifity"
                     >
                       <span>Last 30 days</span>
                       <i
                         class="inline-flex items-center bx bx-chevron-down ml-1"
                       ></i>
                     </a>
+
+                    <div
+                      class="origin-top-right absolute right-0 mt-1 z-10 w-40 rounded-md shadow-lg hidden"
+                      id="dropdownUserActifity"
+                    >
+                      <div
+                        class="rounded-md bg-white shadow-xs"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="options-menu"
+                      >
+                        <div class="py-1">
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Today</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 7 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 bg-gray-200 text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 30 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 1 Year</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="text-3xl inline font-medium text-gray-700">
@@ -208,15 +541,53 @@
               <div class="px-4 py-3 flex-auto">
                 <div class="pb-0 flex justify-between">
                   <div class="text-gray-600 text-sm">Feedback</div>
+                  <div class="relative inline-block inline-block">
                     <a
                       href=""
-                      class="inline-flex items-center text-gray-600 text-sm"
+                      class="inline-flex items-center text-gray-600 text-sm dropdown-toggle"
+                      data-dropdown="dropdownFeedback"
                     >
                       <span>Last 30 days</span>
                       <i
                         class="inline-flex items-center bx bx-chevron-down ml-1"
                       ></i>
                     </a>
+
+                    <div
+                      class="origin-top-right absolute right-0 mt-1 z-10 w-40 rounded-md shadow-lg hidden"
+                      id="dropdownFeedback"
+                    >
+                      <div
+                        class="rounded-md bg-white shadow-xs"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="options-menu"
+                      >
+                        <div class="py-1">
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Today</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 7 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 bg-gray-200 text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 30 days</a
+                          >
+                          <a
+                            href="#"
+                            class="block px-3 py-1 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                            >Last 1 Year</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="text-3xl inline font-medium text-gray-700">456</div>
               </div>
@@ -238,6 +609,9 @@
             </div>
           </div>
         </div>
+        <!-- End Content chart 1 -->
+
+        <!-- Content chart 2 -->
         <div class="flex flex-wrap mb-2">
           <div class="md:w-2/3 w-full">
             <div class="bg-white my-2 mx-2 border rounded-md px-2 py-4">
@@ -249,11 +623,57 @@
                   ></span>
                   <div class="text-gray-700">Sales Product Categories</div>
                 </div>
-                <div>
-                  <a class="py-1 px-4 rounded text-gray-600">
-                    Last 60 days
-                    <i class="bx bx-chevron-down ml-1"></i>
+                <div class="relative inline-block text-left">
+                  <a
+                    href=""
+                    class="inline-flex items-center text-gray-600 text-base dropdown-toggle"
+                    data-dropdown="dropdownSalesProductCategory"
+                  >
+                    <span>Last 60 days</span>
+                    <i
+                      class="inline-flex items-center bx bx-chevron-down ml-1"
+                    ></i>
                   </a>
+
+                  <div
+                    class="origin-top-right absolute right-0 mt-1 z-10 w-48 rounded-md shadow-lg hidden"
+                    id="dropdownSalesProductCategory"
+                  >
+                    <div
+                      class="rounded-md bg-white shadow-xs"
+                      role="menu"
+                      aria-orientation="vertical"
+                      aria-labelledby="options-menu"
+                    >
+                      <div class="py-1">
+                        <a
+                          href="#"
+                          class="block px-3 py-1 text-base leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                          >Today</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-3 py-1 text-base leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                          >Last 7 days</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-3 py-1 text-base leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                          >Last 30 days</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-3 py-1 text-base leading-5 bg-gray-200 text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                          >Last 60 days</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-3 py-1 text-base leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                          >Last 1 Year</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div id="chart-bar" class="flex-auto"></div>
@@ -336,14 +756,19 @@
             </div>
           </div>
         </div>
+        <!-- End Content chart 2 -->
       </div>
+      <!-- End Content -->
     </div>
+    <!-- End wrapper -->
 
+    <!-- Footer -->
     <div class="max-w-screen-xl mx-auto">
       <div class="mt-4 mx-2 flex justify-between items-center">
         <div>MIT License- Copyright (c) 2020 <b>Under-X</b></div>
       </div>
     </div>
+    <!-- End footer -->
     <script>
       var options = {
         chart: {
