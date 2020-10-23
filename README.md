@@ -6,7 +6,7 @@ Free and Open Source Admin Templates, Rich UI Kit base on Tailwind CSS
 https://zeroblack-c.github.io/jakarta-lte/
 
 
-## Developemnt Guide
+## Development Guide
 
 Clone repository
 ```bash
