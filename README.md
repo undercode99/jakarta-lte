@@ -51,6 +51,7 @@ npm run build
     - [ ] Breadcrumb
     - [ ] Avatar
     - [ ] ...
+
 - Page
     - [ ]  Login
     - [ ]  Register
@@ -66,7 +67,9 @@ npm run build
     - [ ]  Email
     - [ ]  Chating
     - [ ]  Social Network
+    - [ ]  Filemanager
     - [ ]  ...
+
 - Layout
     - [ ] Right Vertical
     - [ ] Right Vertical fluid
@@ -74,6 +77,12 @@ npm run build
     - [ ] Horizontal Fluid
     - [ ] ...
 
-Coming soon
+- Dashboard
+    - [X] Dashboard v1 - Performance Product
+    - [ ] ...
+
+## Coming soon
 - Vue Version
 - React Version
+
+## Licence
