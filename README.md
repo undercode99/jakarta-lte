@@ -33,14 +33,14 @@ npm run build
 
 ## TODO
 - UI Component
-    - [ ] Card
-    - [ ] Button
-    - [ ] Form
-    - [ ] Dropdown
+    - [ ] Cards
+    - [x] Buttons
+    - [ ] Forms
+    - [ ] Dropdowns
     - [ ] Icons
     - [ ] Maps
-    - [X] Chart
-    - [ ] Table
+    - [X] Charts
+    - [ ] Tables
     - [ ] Calendar
     - [ ] List
     - [ ] Navbar
@@ -58,8 +58,8 @@ npm run build
     - [ ]  Login
     - [ ]  Register
     - [ ]  Blank
-    - [ ]  User profile
-    - [ ]  User settings
+    - [ ]  User Profile
+    - [ ]  User Settings
     - [ ]  Gallery
     - [ ]  Blog
     - [ ]  Invoice
@@ -68,7 +68,7 @@ npm run build
     - [ ]  Marketing
     - [ ]  Email
     - [ ]  Chating
-    - [ ]  Social Network
+    - [ ]  Social Feeds
     - [ ]  Filemanager
     - [ ]  ...
 

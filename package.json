@@ -1,15 +1,15 @@
 {
-  "name": "tail-np",
+  "name": "jakarta-lte",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulp",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Zero Black Coder <zrcoder101@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "9.8.0",
     "browser-sync": "^2.26.13",
