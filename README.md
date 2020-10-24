@@ -1,6 +1,6 @@
 JAKARTA LTE 
 ============================
-Free and Open Source Admin Templates, Rich UI Kit base on Tailwind CSS
+Free and Open Source Premium Admin Templates with rich UI Kit base on Tailwind CSS
 
 ![Screenshot](/screenshot.png?raw=true)
 
