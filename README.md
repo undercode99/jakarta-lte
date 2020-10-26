@@ -33,7 +33,7 @@ npm run build
 
 ## TODO
 - UI Component
-    - [ ] Cards
+    - [X] Cards
     - [x] Buttons
     - [ ] Forms
     - [ ] Dropdowns
