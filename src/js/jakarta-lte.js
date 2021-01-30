@@ -2,34 +2,34 @@
  * Dropdown
  */
 $(function () {
-  var $dropdownClass = $(".dropdown-toggle");
-  var $dropdownData = "dropdown";
+  const $dropdownClass = $(".dropdown-toggle");
+  const $dropdownData = "dropdown";
   $dropdownClass.on("click", function (e) {
     e.preventDefault();
-    var dropdownId = $(this).data($dropdownData);
+    const dropdownId = $(this).data($dropdownData);
     $("#" + dropdownId).toggle();
     $dropdownClass.each(function () {
-      var alldropdown = $(this).data($dropdownData);
-      if (alldropdown === dropdownId) {
+      const all_dropdown = $(this).data($dropdownData);
+      if (all_dropdown === dropdownId) {
         return;
       }
-      $("#" + alldropdown).hide();
+      $("#" + all_dropdown).hide();
     });
   });
   $(document).on("click", function (e) {
     e.stopPropagation();
     if ($dropdownClass.has(e.target).length === 0) {
       $dropdownClass.each(function () {
-        var dropdownId = $(this).data($dropdownData);
+        const dropdownId = $(this).data($dropdownData);
         $("#" + dropdownId).hide();
       });
     }
   });
   $(document).on("keyup", function (e) {
-    var key = e.key;
+    const key = e.key;
     if (key === "Escape" || key === "Esc" || key === 27) {
       $dropdownClass.each(function () {
-        var dropdownId = $(this).data($dropdownData);
+        const dropdownId = $(this).data($dropdownData);
         $("#" + dropdownId).hide();
       });
     }

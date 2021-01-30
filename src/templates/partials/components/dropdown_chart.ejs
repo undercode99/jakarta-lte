@@ -1,0 +1,40 @@
+<div class="relative inline-block text-left <%= (typeof css_class !== 'undefined' ? css_class : 'text-base') %>">
+  <a
+    href=""
+    class="inline-flex items-center text-gray-600 dropdown-toggle"
+    data-dropdown="<%= name %>"
+  >
+    <span><%= active %> </span>
+    <i class="inline-flex items-center bx bx-chevron-down ml-1"></i>
+  </a>
+
+  <div
+    class="origin-top-right absolute right-0 mt-1 z-10 w-48 rounded-md shadow-lg hidden"
+    id="<%= name %>"
+  >
+    <div
+      class="rounded-md bg-white shadow-xs"
+      role="menu"
+      aria-orientation="vertical"
+      aria-labelledby="options-menu"
+    >
+      <div class="py-1">
+        <% ["Today", "Last 7 days", "Last 30 days", "Last 60 days", "Last 1 Year"].forEach((el) => { %>
+            <% if(active == el){ %>
+                <a
+                href="#"
+                class="block px-3 py-1 leading-5 text-gray-600 bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                ><%= el %></a
+                >
+            <% }else{ %>
+                <a
+                href="#"
+                class="block px-3 py-1 leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                ><%= el %></a
+                >
+            <% } %> 
+        <% }) %>
+      </div>
+    </div>
+  </div>
+</div>

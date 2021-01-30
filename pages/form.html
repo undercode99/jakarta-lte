@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Jakarta LTE - Free and Open Source Premium Admin Templates with rich UI
+      Kit base on Tailwind CSS
+    </title>
+
+    <!-- Tailwind css  -->
+    <link rel="stylesheet" href="./../dist/css/tailwind.min.css" />
+    <!-- Box icon  -->
+    <link
+      rel="stylesheet"
+      href="./../dist/libs/boxicons/css/boxicons.min.css"
+    />
+
+    <!-- Jquery plugin js -->
+    <script src="./../dist/libs/jquery/jquery.slim.min.js"></script>
+    <!-- Apex chart plugins js -->
+    <script src="./../dist/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- Core js -->
+    <script src="./../dist/js/jakarta-lte.min.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-300">
+      <div
+        class="flex items-center justify-between flex-wrap mx-auto max-w-screen-xl"
+      >
+        <div class="flex items-center mx-2 py-3 md:py-0">
+          <div class="flex items-center">
+            <button class="md:hidden mx-3">
+              <i class="text-2xl bx bx-menu"></i>
+            </button>
+            <a href="#" class="font-bold text-xl pr-6"
+              >Jakarta<span class="text-gray-500 font-normal">LTE</span></a
+            >
+          </div>
+          <ul class="text-sm font-normal hidden md:flex">
+            <li
+              class="mx-3 py-4 font-medium text-green-500 border-b-2 border-green-500"
+            >
+              <a href="#" class="inline-flex items-center">
+                <i class="bx bx-home mr-1"></i>
+                Home
+              </a>
+            </li>
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 inline-block relative text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex text-sm items-center text-gray-600 dropdown-toggle"
+                data-dropdown="dropdownMenuDashboard"
+              >
+                <i class="bx bx-pie-chart-alt mr-1"></i>
+                <span>Dashboard</span>
+                <i class="bx bx-chevron-down ml-1"></i>
+              </a>
+
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="dropdownMenuDashboard"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="./../index.html"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dashboard v1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dashboard v2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dashboard v3</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 relative inline-block text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center dropdown-toggle"
+                data-dropdown="uiComponentMenu"
+              >
+                <i class="bx bx-outline mr-1"></i>
+                <span>UI Component</span>
+                <i class="bx bx-chevron-down ml-1"></i>
+              </a>
+
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="uiComponentMenu"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="./form.html"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Form</a
+                    >
+                    <a
+                      href="./card.html"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Card</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Chart</a
+                    >
+                    <a
+                      href="./button.html"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Buttons</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Dropdown</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Navbar</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Maps</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 relative inline-block text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center dropdown-toggle"
+                data-dropdown="pagesNav"
+              >
+                <i class="bx bx-book mr-1"></i>
+                <span>Pages</span>
+                <i class="bx bx-chevron-down ml-1"></i>
+              </a>
+
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="pagesNav"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Login</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Register</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >User Profile</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >User Settings</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Blog</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Timeline</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="mx-3 py-4 text-gray-600 hover:text-gray-900 relative inline-block text-left"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center dropdown-toggle"
+                data-dropdown="layoutNav"
+                ><i class="bx bx-dock-right mr-1"></i>
+                <span> Layout</span>
+                <i class="bx bx-chevron-down ml-1"></i
+              ></a>
+
+              <div
+                class="origin-top-right absolute right-0 mt-3 z-10 w-40 rounded-md shadow-lg hidden"
+                id="layoutNav"
+              >
+                <div
+                  class="rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Vertical</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
+                      >Vertical fluid</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center">
+          <button class="mt-1 relative mx-2">
+            <i class="bx bx-bell text-xl text-gray-600"></i>
+            <span
+              aria-hidden="true"
+              class="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full dark:border-gray-800"
+            ></span>
+          </button>
+
+          <div class="inline-block relative text-left">
+            <a
+              class="flex items-center mx-2 dropdown-toggle"
+              href=""
+              data-dropdown="dropDownMenu"
+            >
+              <img
+                class="w-8 h-8 mr-3 rounded-full object-cover"
+                src="./../dist/avatar/nis.png"
+                alt="Avatar"
+              />
+              <div class="mt-1 hidden md:block">
+                <div class="leading-3 text-sm text-gray-700">
+                  Zero Black Coder
+                </div>
+                <small class="text-xs text-gray-500">Anggota DPR</small>
+              </div>
+            </a>
+
+            <div
+              class="origin-top-right absolute right-0 mt-3 z-56 w-56 rounded-md shadow-lg hidden"
+              id="dropDownMenu"
+            >
+              <div
+                class="rounded-md bg-white shadow-xs"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="options-menu"
+              >
+                <div class="py-1">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                    role="menuitem"
+                    >Settings</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                    role="menuitem"
+                    >Logout</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Wrapper -->
+    <div class="max-w-screen-xl mx-auto">
+      <!-- Title -->
+      <div class="mt-4 mx-2 md:flex justify-between items-center">
+        <div class="">
+          <h3 class="text-gray-600 text-sm">
+            <a href="" class="text-green-600">
+              <i class="bx bx-home mr-1"></i>
+
+              Home
+            </a>
+            /
+
+            <a href="" class="text-green-600"> Component </a> / Form
+          </h3>
+
+          <div>
+            <h1 class="text-2xl mt-1 font-medium">Form</h1>
+          </div>
+        </div>
+      </div>
+      <!-- End title -->
+
+      <!-- Content -->
+      <div class="flex flex-wrap">
+        <div class="w-full">
+          <div class="bg-white border rounded mx-2 my-4">
+            <div class="py-3 px-4 border-b flex justify-between items-center">
+              <h2 class="text-lg font-medium text-gray-700">Inline Form</h2>
+            </div>
+            <div class="p-3 text-gray-600">
+              <form>
+                <div class="flex flex-wrap">
+                  <div class="w-full md:w-1/3 p-2">
+                    <label class="block mb-1.5">Fullname</label>
+                    <input
+                      class="focus:border-blue-400 focus:ring-2 focus:ring-blue-200 focus:outline-none w-full text-base placeholder-gray-400 border border-gray-300 rounded py-1.5 px-3"
+                      type="text"
+                      placeholder="Enter someting ..."
+                    />
+                    <span class="text-sm text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </div>
+                  <div class="w-full md:w-1/3 p-2">
+                    <label class="block mb-1.5">Username</label>
+                    <input
+                      class="focus:ring-2 focus:ring-red-200 focus:outline-none w-full text-base placeholder-gray-400 border border-red-500 rounded py-1.5 px-3"
+                      type="text"
+                      placeholder="Enter username here ..."
+                      required
+                    />
+                    <span class="text-sm text-red-600"
+                      >Username is required</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 p-2">
+                    <label class="block mb-1.5">Email</label>
+                    <input
+                      class="border-green-400 focus:ring-1 focus:ring-green-200 focus:outline-none w-full text-base placeholder-gray-400 border rounded py-1.5 px-3"
+                      type="email"
+                      placeholder="example@email.com"
+                    />
+                    <span class="text-sm text-green-600"
+                      >Email is valid, ready to use</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 p-2">
+                    <button
+                      class="px-4 py-2 text-sm border border-transparent rounded bg-green-500 text-white hover:bg-green-400 focus:outline-none focus:border-green-500 focus:shadow-outline-green active:bg-green-500 transition duration-150 ease-in-out inline-flex items-center"
+                    >
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <div class="bg-white border rounded mx-2 my-4">
+            <div class="py-3 px-4 border-b flex justify-between items-center">
+              <h2 class="text-lg font-medium text-gray-700">Vertical Form</h2>
+            </div>
+            <div class="p-3 text-gray-600">
+              <form>
+                <div class="block p-2">
+                  <label class="block mb-1.5">Fullname</label>
+                  <input
+                    class="focus:border-blue-400 focus:ring-2 focus:ring-blue-200 focus:outline-none w-full text-base placeholder-gray-400 border border-gray-300 rounded py-1.5 px-3"
+                    type="text"
+                    placeholder="Enter fullname ..."
+                  />
+                  <span class="text-sm text-gray-500"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit</span
+                  >
+                </div>
+                <div class="block p-2">
+                  <label class="block mb-1.5">Email</label>
+                  <input
+                    class="focus:ring-2 focus:ring-red-200 focus:outline-none w-full text-base placeholder-gray-400 border border-red-500 rounded py-1.5 px-3"
+                    type="text"
+                    placeholder="Enter Email Address..."
+                    required
+                  />
+                  <span class="text-sm text-red-600">Email is required</span>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <label class="block mb-1.5">About</label>
+                    <textarea
+                      class="border-green-400 focus:ring-1 focus:ring-green-200 focus:outline-none w-full text-base placeholder-gray-400 border rounded py-1.5 px-3"
+                      rows="3"
+                      placeholder="Enter some long form content."
+                    >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </textarea
+                    >
+                    <span class="text-sm text-green-600">Wow awesome bro</span>
+                  </div>
+                </div>
+                <div class="block p-2 mt-4">
+                  <button
+                    class="px-4 py-2 text-sm border border-transparent rounded bg-green-500 text-white hover:bg-green-400 focus:outline-none focus:border-green-500 focus:shadow-outline-green active:bg-green-500 transition duration-150 ease-in-out inline-flex items-center"
+                  >
+                    <i class="bx bx-world text-white mr-2 text-base"></i>
+                    Publish
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <div class="bg-white border rounded mx-2 my-4">
+            <div class="py-3 px-4 border-b flex justify-between items-center">
+              <h2 class="text-lg font-medium text-gray-700">Horizontal Form</h2>
+            </div>
+            <div class="p-3 text-gray-600">
+              <form>
+                <div class="p-2 flex">
+                  <label class="w-1/4 inline py-2 pr-4 text-right"
+                    >Fullname</label
+                  >
+                  <div class="w-full">
+                    <input
+                      class="focus:border-blue-400 focus:ring-2 focus:ring-blue-200 focus:outline-none w-full text-base placeholder-gray-400 border border-gray-300 rounded py-1.5 px-3"
+                      type="text"
+                      placeholder="Enter fullname ..."
+                    />
+                    <span class="text-sm text-gray-500"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit</span
+                    >
+                  </div>
+                </div>
+
+                <div class="p-2 flex">
+                  <label class="w-1/4 inline py-2 pr-4 text-right"
+                    >Username</label
+                  >
+                  <div class="w-full">
+                    <input
+                      class="focus:ring-2 focus:ring-red-200 focus:outline-none w-full text-base placeholder-gray-400 border border-red-500 rounded py-1.5 px-3"
+                      type="text"
+                      placeholder="Enter username ..."
+                    />
+                    <span class="text-sm text-red-600"
+                      >Username is required</span
+                    >
+                  </div>
+                </div>
+
+                <div class="p-2 flex">
+                  <label class="w-1/4 inline py-2 pr-4 text-right">About</label>
+                  <div class="w-full">
+                    <textarea
+                      class="border-green-400 focus:ring-1 focus:ring-green-200 focus:outline-none w-full text-base placeholder-gray-400 border rounded py-1.5 px-3"
+                      rows="3"
+                      placeholder="Enter some long form content."
+                      spellcheck="false"
+                    >
+Yes, iam full stuck ...</textarea
+                    >
+                    <span class="text-sm text-green-600">Wow awesome bro</span>
+                  </div>
+                </div>
+
+                <div class="p-2 flex mt-4">
+                  <label class="w-1/4 inline py-2 pr-4 text-right"></label>
+                  <div class="w-full">
+                    <button
+                      class="px-4 py-2 text-sm border border-transparent rounded bg-green-500 text-white hover:bg-green-400 focus:outline-none focus:border-green-500 focus:shadow-outline-green active:bg-green-500 transition duration-150 ease-in-out inline-flex items-center"
+                    >
+                      <i class="bx bx-world text-white mr-2 text-base"></i>
+                      Publish
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="bg-white border rounded mx-2 my-4">
+            <div class="py-3 px-4 border-b flex justify-between items-center">
+              <h2 class="text-lg font-medium text-gray-700">Size input</h2>
+            </div>
+            <div class="p-3 text-gray-600">
+              <form>
+                <div class="flex flex-wrap">
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-sm">Full name</label>
+                    <input
+                      class="focus:border-blue-400 focus:ring-2 focus:ring-blue-200 focus:outline-none w-full text-sm placeholder-gray-400 border border-gray-300 rounded py-1 px-2"
+                      type="text"
+                      placeholder="Enter someting ..."
+                    />
+                    <span class="text-xs text-gray-500"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-sm">Username</label>
+                    <input
+                      class="focus:ring-2 focus:ring-red-200 focus:outline-none w-full text-sm placeholder-gray-400 border border-red-500 rounded py-1 px-2"
+                      type="text"
+                      placeholder="Enter username here ..."
+                      required
+                    />
+                    <span class="text-xs text-red-600"
+                      >Username is required</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-sm">Email</label>
+                    <input
+                      class="border-green-400 focus:ring-1 focus:ring-green-200 focus:outline-none w-full text-sm placeholder-gray-400 border rounded py-1 px-2"
+                      type="email"
+                      placeholder="example@email.com"
+                    />
+                    <span class="text-xs text-green-600"
+                      >Email is valid, ready to use</span
+                    >
+                  </div>
+                </div>
+              </form>
+
+              <form>
+                <div class="flex flex-wrap">
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-base">Full name</label>
+                    <input
+                      class="focus:border-blue-400 focus:ring-2 focus:ring-blue-200 focus:outline-none w-full text-base placeholder-gray-400 border border-gray-300 rounded py-1.5 px-3"
+                      type="text"
+                      placeholder="Enter someting ..."
+                    />
+                    <span class="text-sm text-gray-500"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-base">Username</label>
+                    <input
+                      class="focus:ring-2 focus:ring-red-200 focus:outline-none w-full text-base placeholder-gray-400 border border-red-500 rounded py-1.5 px-3"
+                      type="text"
+                      placeholder="Enter username here ..."
+                      required
+                    />
+                    <span class="text-sm text-red-600"
+                      >Username is required</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-base">Email</label>
+                    <input
+                      class="border-green-400 focus:ring-1 focus:ring-green-200 focus:outline-none w-full text-base placeholder-gray-400 border rounded py-1.5 px-3"
+                      type="email"
+                      placeholder="example@email.com"
+                    />
+                    <span class="text-sm text-green-600"
+                      >Email is valid, ready to use</span
+                    >
+                  </div>
+                </div>
+              </form>
+
+              <form>
+                <div class="flex flex-wrap">
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-lg">Full name</label>
+                    <input
+                      class="focus:border-blue-400 focus:ring-2 focus:ring-blue-200 focus:outline-none w-full text-lg placeholder-gray-400 border border-gray-300 rounded py-3 px-4"
+                      type="text"
+                      placeholder="Enter someting ..."
+                    />
+                    <span class="text-base text-gray-500"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-lg">Username</label>
+                    <input
+                      class="focus:ring-2 focus:ring-red-200 focus:outline-none w-full text-lg placeholder-gray-400 border border-red-500 rounded py-3 px-4"
+                      type="text"
+                      placeholder="Enter username here ..."
+                      required
+                    />
+                    <span class="text-base text-red-600"
+                      >Username is required</span
+                    >
+                  </div>
+                  <div class="w-full md:w-1/3 px-2 py-2">
+                    <label class="block mb-1.5 text-lg">Email</label>
+                    <input
+                      class="border-green-400 focus:ring-1 focus:ring-green-200 focus:outline-none w-full text-lg placeholder-gray-400 border rounded py-3 px-4"
+                      type="email"
+                      placeholder="example@email.com"
+                    />
+                    <span class="text-base text-green-600"
+                      >Email is valid, ready to use</span
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End wrapper -->
+    <!-- Footer -->
+    <div class="max-w-screen-xl mx-auto mb-4">
+      <div class="mt-4 mx-2 flex justify-between items-center">
+        <div class="text-gray-600">
+          MIT License- Copyright (c) 2021
+          <strong class="font-bold">Under-X</strong>
+        </div>
+      </div>
+    </div>
+    <!-- End footer -->
+  </body>
+</html>

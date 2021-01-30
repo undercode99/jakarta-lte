@@ -5,7 +5,9 @@
   "main": "gulp",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "ejs_compile:html": "gulp ejs_compile:html",
+    "prettier:html": "gulp prettier:html"
   },
   "keywords": [],
   "author": "Zero Black Coder <zrcoder101@gmail.com>",
@@ -14,17 +16,23 @@
     "autoprefixer": "9.8.0",
     "browser-sync": "^2.26.13",
     "cssnano": "^4.1.10",
+    "debug": "^4.3.1",
+    "eslint": "^7.16.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-copy-libs": "^1.0.2",
+    "gulp-ejs": "^5.1.0",
     "gulp-npm-dist": "^1.0.3",
     "gulp-postcss": "^9.0.0",
+    "gulp-prettier": "^3.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "postcss": "^8.1.8",
     "postcss-cli": "^8.3.0",
-    "tailwindcss": "^2.0.1"
+    "postcss-value-parser": "^4.1.0",
+    "tailwindcss": "^2.0.1",
+    "yaml": "^1.10.0"
   },
   "dependencies": {
     "apexcharts": "^3.22.2",

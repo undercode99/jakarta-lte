@@ -9,22 +9,22 @@
     </title>
 
     <!-- Tailwind css  -->
-    <link rel="stylesheet" href="./../../dist/css/tailwind.min.css" />
+    <link rel="stylesheet" href="./../dist/css/tailwind.min.css" />
     <!-- Box icon  -->
     <link
       rel="stylesheet"
-      href="./../../dist/libs/boxicons/css/boxicons.min.css"
+      href="./../dist/libs/boxicons/css/boxicons.min.css"
     />
 
     <!-- Jquery plugin js -->
-    <script src="./../../dist/libs/jquery/jquery.slim.min.js"></script>
-    <!-- Apexchart plugins js -->
-    <script src="./../../dist/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="./../dist/libs/jquery/jquery.slim.min.js"></script>
+    <!-- Apex chart plugins js -->
+    <script src="./../dist/libs/apexcharts/apexcharts.min.js"></script>
     <!-- Core js -->
-    <script src="./../../dist/js/jakarta-lte.min.js"></script>
+    <script src="./../dist/js/jakarta-lte.min.js"></script>
   </head>
   <body class="bg-gray-100">
-    <!-- Nabar -->
+    <!-- Navbar -->
     <nav class="bg-white border-b border-gray-300">
       <div
         class="flex items-center justify-between flex-wrap mx-auto max-w-screen-xl"
@@ -72,7 +72,7 @@
                 >
                   <div class="py-1">
                     <a
-                      href="./../../index.html"
+                      href="./../index.html"
                       class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
                       >Dashboard v1</a
                     >
@@ -115,12 +115,12 @@
                 >
                   <div class="py-1">
                     <a
-                      href="./../../pages/components/form.html"
+                      href="./form.html"
                       class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
                       >Form</a
                     >
                     <a
-                      href="./../../pages/components/card.html"
+                      href="./card.html"
                       class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
                       >Card</a
                     >
@@ -130,7 +130,7 @@
                       >Chart</a
                     >
                     <a
-                      href="./../../pages/components/button.html"
+                      href="./button.html"
                       class="block px-3 py-2 text-sm leading-5 text-gray-600 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700"
                       >Buttons</a
                     >
@@ -268,7 +268,7 @@
             >
               <img
                 class="w-8 h-8 mr-3 rounded-full object-cover"
-                src="./../../dist/avatar/nis.png"
+                src="./../dist/avatar/nis.png"
                 alt="Avatar"
               />
               <div class="mt-1 hidden md:block">
@@ -311,73 +311,55 @@
     </nav>
     <!-- End navbar -->
 
-    <!-- Wraper -->
+    <!-- Wrapper -->
     <div class="max-w-screen-xl mx-auto">
       <!-- Title -->
       <div class="mt-4 mx-4 md:flex justify-between items-center">
-        <div>
+        <div class="">
           <h3 class="text-gray-600 text-sm">
-            <a href="" class="text-green-600"
-              ><i class="bx bx-home mr-1"></i>Home</a
-            >
-            / Cards
+            <a href="" class="text-green-600">
+              <i class="bx bx-home mr-1"></i>
+
+              Home
+            </a>
+            /
+
+            <a href="" class="text-green-600"> Component </a> / Card
           </h3>
         </div>
       </div>
       <!-- End title -->
 
-      <div class="mt-3">
-        <div class="mx-4">
-          <h1 class="text-2xl font-medium text-gray-700">Card</h1>
-          <span class="text-base text-gray-600">Simple card style </span>
+      <!-- Content -->
+      <div>
+        <!-- Title -->
+        <div class="mx-4 my-2">
+          <h1 class="text-2xl mt-1 font-medium">Blog</h1>
+          <span class="text-base text-gray-600">Card Blog Style</span>
         </div>
+        <!-- End title -->
+
         <div class="flex flex-wrap">
           <div class="md:w-1/3">
             <div class="bg-white border rounded m-4">
-              <div class="py-3 px-4 border-b flex justify-between items-center">
-                <h2 class="text-lg font-medium text-gray-700">
-                  Card title here
-                </h2>
-                <a href="#">
-                  <i class="text-lg text-gray-700 bx bx-chevron-down ml-1"></i>
-                </a>
-              </div>
-              <div class="py-3 px-4 text-gray-600 border-b">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptates velit ad deserunt, est voluptatum modi! Molestias ut
-                blanditiis ullam unde vero delectus pariatur, iste labore
-                debitis, vitae nobis ex libero.
-              </div>
-              <div class="py-3 px-4">
-                <button
-                  class="px-4 py-2 text-sm border border-transparent rounded bg-green-500 text-white hover:bg-green-400 focus:outline-none focus:border-green-500 focus:shadow-outline-green active:bg-green-500 transition duration-150 ease-in-out inline-flex items-center mr-1"
-                >
-                  <i class="bx bx-edit text-white mr-2 text-base"></i>
-                  Edit
-                </button>
-                <button
-                  class="px-4 py-2 border border-gray-400 text-sm mx-1 rounded bg-white hover:bg-gray-100 focus:outline-none focus:shadow-outline-white active:bg-white transition duration-150 ease-in-out inline-flex items-center"
-                >
-                  <i class="bx bx-x text-gray-700 mr-2 text-base"></i>
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/3">
-            <div class="bg-white border rounded m-4">
+              <a href="">
+                <img
+                  class="rounded-t h-48 w-full object-cover"
+                  src="./../dist/images/2.jpg"
+                  alt=""
+                />
+              </a>
               <div class="m-4">
                 <div>
-                  <a href="" class="text-2xl font-medium text-gray-700">
-                    Card title here
+                  <a href="" class="font-bold text-gray-700 text-xl">
+                    I suck at programming, but I love it. What should I do?
                   </a>
                 </div>
-                <div class="my-2">
+                <div class="my-4">
                   <p class="text-gray-600 my-2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptates velit ad deserunt, est voluptatum modi! Molestias
-                    ut blanditiis ullam unde vero delectus pariatur, iste labore
-                    debitis, vitae nobis ex libero.
+                    At level zero you know nothing, however when you learn a
+                    thing or two basic things about programming, you now get to
+                    level 1 ...
                   </p>
                 </div>
                 <div class="mt-6">
@@ -385,12 +367,12 @@
                     <a class="flex justify-between items-center" href="">
                       <img
                         class="w-10 h-10 rounded-full object-cover"
-                        src="./../../dist/avatar/nis.png"
+                        src="./../dist/avatar/nis.png"
                         alt="Avatar"
                       />
                       <div class="ml-3">
                         <p class="text-gray-700 text-sm block leading-none">
-                          Linus Torvalds
+                          Zero Black Coder
                         </p>
                         <small class="text-xs text-gray-600"
                           >16 Jul 2020 - 3 Minutes read</small
@@ -411,42 +393,253 @@
           </div>
           <div class="md:w-1/3">
             <div class="bg-white border rounded m-4">
-              <div class="pt-3 pb-2 px-4">
-                <h2 class="text-2xl font-medium text-gray-700">
-                  Card title here
-                </h2>
-                <small class="text-gray-600 text-sm"
-                  >5 days ago - Zero Black Coder
-                </small>
+              <a href="">
+                <img
+                  class="h-48 w-full rounded-t object-cover"
+                  src="./../dist/images/3.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="m-4">
+                <div class="my-4">
+                  <div class="flex justify-between items-center">
+                    <a class="flex justify-between items-center" href="">
+                      <img
+                        class="w-10 h-10 rounded-full object-cover"
+                        src="./../dist/avatar/nis.png"
+                        alt="Avatar"
+                      />
+                      <div class="ml-3">
+                        <p class="text-gray-700 text-sm block leading-none">
+                          Mariana Azevedo
+                        </p>
+                        <small class="text-xs text-gray-600"
+                          >Today - 3 Minutes read</small
+                        >
+                      </div>
+                    </a>
+                    <div>
+                      <button
+                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
+                      >
+                        <i class="bx bx-bookmark text-xl"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4">
+                  <a href="" class="font-bold text-gray-700 text-xl">
+                    S.O.L.I.D principles: what are they and why projects should
+                    use them
+                  </a>
+                </div>
+
+                <div class="my-4">
+                  <p class="text-gray-600 my-2">
+                    At level zero you know nothing, however when you learn a
+                    thing or two basic things about programming, you now get to
+                    level 1 ...
+                  </p>
+                </div>
               </div>
-              <div class="py-2 px-4 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptates velit ad deserunt, est voluptatum modi! Molestias ut
-                blanditiis ullam unde vero delectus pariatur.
+            </div>
+          </div>
+
+          <div class="md:w-1/3">
+            <div class="bg-white border rounded m-4">
+              <div class="m-4">
+                <div class="flex justify-between items-center">
+                  <a class="flex justify-between items-center" href="">
+                    <img
+                      class="w-10 h-10 rounded-full object-cover"
+                      src="./../dist/avatar/nis.png"
+                      alt="Avatar"
+                    />
+                    <div class="ml-3">
+                      <p class="text-gray-700 text-sm block leading-none">
+                        Mariana Azevedo
+                      </p>
+                      <small class="text-xs text-gray-600"
+                        >Today - 3 Minutes read</small
+                      >
+                    </div>
+                  </a>
+                  <div>
+                    <button
+                      class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
+                    >
+                      <i class="bx bx-bookmark text-xl"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="py-2 mb-3 px-4">
-                <button
-                  class="text-gray-600 hover:text-red-600 focus:outline-none focus:shadow-outline-blue active:text-red-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                >
-                  <i class="bx bx-heart text-xl"></i>
-                </button>
-                <button
-                  class="text-gray-600 hover:text-gray-700 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                >
-                  <i class="bx bx-bookmark text-xl"></i>
-                </button>
+              <a href="">
+                <img
+                  class="h-48 w-full object-cover"
+                  src="./../dist/images/4.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="m-4">
+                <div>
+                  <a href="" class="font-bold text-gray-700 text-xl">
+                    S.O.L.I.D principles: what are they and why projects should
+                    use them
+                  </a>
+                </div>
+                <div class="my-4">
+                  <p class="text-gray-600 my-2">
+                    At level zero you know nothing, however when you learn a
+                    thing or two basic things about programming, you now get to
+                    level 1 ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/3">
+            <div class="bg-white border rounded m-4">
+              <div class="m-4">
+                <div>
+                  <a href="" class="font-bold text-gray-700 text-xl">
+                    S.O.L.I.D principles: what are they and why projects should
+                    use them
+                  </a>
+                </div>
+                <div class="my-4">
+                  <p class="text-gray-600 my-2">
+                    At level zero you know nothing, however when you learn a
+                    thing or two basic things about programming, you now get to
+                    level 1 ...
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-center">
+                    <a class="flex justify-between items-center" href="">
+                      <img
+                        class="w-10 h-10 rounded-full object-cover"
+                        src="./../dist/avatar/nis.png"
+                        alt="Avatar"
+                      />
+                      <div class="ml-3">
+                        <p class="text-gray-700 text-sm block leading-none">
+                          Mariana Azevedo
+                        </p>
+                        <small class="text-xs text-gray-600"
+                          >Today - 3 Minutes read</small
+                        >
+                      </div>
+                    </a>
+                    <div>
+                      <button
+                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
+                      >
+                        <i class="bx bx-bookmark text-xl"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/3">
+            <div class="bg-white border rounded m-4">
+              <div class="m-4">
+                <div>
+                  <a href="" class="font-bold text-gray-700 text-xl"
+                    >Talk is cheap. Show me the code - Linus Torvalds
+                  </a>
+                </div>
+                <div class="my-4">
+                  <p class="text-gray-600 my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo, ex autem? Nisi minus porro pariatur quaerat officia
+                    asperiores officiis...
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-center">
+                    <a class="flex justify-between items-center" href="">
+                      <img
+                        class="w-10 h-10 rounded-full object-cover"
+                        src="./../dist/avatar/nis.png"
+                        alt="Avatar"
+                      />
+                      <div class="ml-3">
+                        <p class="text-gray-700 text-sm block leading-none">
+                          Mariana Azevedo
+                        </p>
+                        <small class="text-xs text-gray-600"
+                          >Today - 3 Minutes read</small
+                        >
+                      </div>
+                    </a>
+                    <div>
+                      <button
+                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
+                      >
+                        <i class="bx bx-bookmark text-xl"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/3">
+            <div class="bg-white border rounded m-4">
+              <div class="m-4">
+                <div>
+                  <a href="" class="font-bold text-gray-700 text-xl">
+                    I suck at programming, but I love it. What should I do?
+                  </a>
+                </div>
+                <div class="my-4">
+                  <p class="text-gray-600 my-2">
+                    At level zero you know nothing, however when you learn a
+                    thing or two basic things about programming, you now get to
+                    level 1 ...
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-center">
+                    <a class="flex justify-between items-center" href="">
+                      <img
+                        class="w-10 h-10 rounded-full object-cover"
+                        src="./../dist/avatar/nis.png"
+                        alt="Avatar"
+                      />
+                      <div class="ml-3">
+                        <p class="text-gray-700 text-sm block leading-none">
+                          Mariana Azevedo
+                        </p>
+                        <small class="text-xs text-gray-600"
+                          >Today - 3 Minutes read</small
+                        >
+                      </div>
+                    </a>
+                    <div>
+                      <button
+                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
+                      >
+                        <i class="bx bx-bookmark text-xl"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- End Content -->
 
       <!-- Content -->
       <div>
         <!-- Title -->
-        <div class="mx-4 mt-2">
-          <h1 class="text-2xl text font-medium text-gray-700">Profile</h1>
-          <span class="text-base text-gray-600">Profile card style</span>
+        <div class="mx-4 my-2">
+          <h1 class="text-2xl mt-1 font-medium">Profile</h1>
+          <span class="text-base text-gray-600">Card Blog Style</span>
         </div>
         <!-- End Title -->
 
@@ -457,7 +650,7 @@
                 <a href="">
                   <img
                     class="rounded-full mx-auto h-24 w-24 object-cover"
-                    src="./../../dist/avatar/nis.png"
+                    src="./../dist/avatar/nis.png"
                     alt=""
                   />
                 </a>
@@ -469,7 +662,7 @@
                     >zrcoder101@gmail.com</span
                   >
                   <p class="text-sm text-gray-600 leading-5 mt-3">
-                    Zero Black Coder is an Member of DPR living in panet namek,
+                    Zero Black Coder is an Member of DPR living in planet namek,
                     i love to play with hooman
                   </p>
                 </div>
@@ -524,7 +717,7 @@
                 <a href="">
                   <img
                     class="rounded-full mx-auto h-24 w-24 object-cover"
-                    src="./../../dist/avatar/nis.png"
+                    src="./../dist/avatar/nis.png"
                     alt=""
                   />
                 </a>
@@ -574,7 +767,7 @@
                 <a href="">
                   <img
                     class="rounded-full mx-auto h-24 w-24 object-cover"
-                    src="./../../dist/avatar/nis.png"
+                    src="./../dist/avatar/nis.png"
                     alt=""
                   />
                 </a>
@@ -617,7 +810,7 @@
               <a href="">
                 <img
                   class="rounded-t h-64 w-full object-cover"
-                  src="./../../dist/images/5.jpg"
+                  src="./../dist/images/5.jpg"
                   alt=""
                 />
               </a>
@@ -653,316 +846,15 @@
         </div>
       </div>
       <!-- End Content -->
-
-      <!-- Content -->
-      <div>
-        <!-- Title -->
-        <div class="mx-4 mt-2">
-          <h1 class="text-2xl text font-medium text-gray-700">Blog</h1>
-          <span class="text-base text-gray-600">Blog card style</span>
-        </div>
-        <!-- End title -->
-        <div class="flex flex-wrap">
-          <div class="md:w-1/3">
-            <div class="bg-white border rounded m-4">
-              <a href="">
-                <img
-                  class="rounded-t h-48 w-full object-cover"
-                  src="./../../dist/images/2.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="m-4">
-                <div>
-                  <a href="" class="font-bold text-gray-700 text-xl">
-                    I suck at programming, but I love it. What should I do?
-                  </a>
-                </div>
-                <div class="my-4">
-                  <p class="text-gray-600 my-2">
-                    At level zero you know nothing, however when you learn a
-                    thing or two basic things about programming, you now get to
-                    level 1 ...
-                  </p>
-                </div>
-                <div class="mt-6">
-                  <div class="flex justify-between items-center">
-                    <a class="flex justify-between items-center" href="">
-                      <img
-                        class="w-10 h-10 rounded-full object-cover"
-                        src="./../../dist/avatar/nis.png"
-                        alt="Avatar"
-                      />
-                      <div class="ml-3">
-                        <p class="text-gray-700 block leading-none">
-                          Zero Black Coder
-                        </p>
-                        <small class="text-xs text-gray-600"
-                          >16 Jul 2020 - 3 Minutes read</small
-                        >
-                      </div>
-                    </a>
-                    <div>
-                      <button
-                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                      >
-                        <i class="bx bx-bookmark text-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/3">
-            <div class="bg-white border rounded m-4">
-              <a href="">
-                <img
-                  class="h-48 w-full rounded-t object-cover"
-                  src="./../../dist/images/3.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="m-4">
-                <div class="my-4">
-                  <div class="flex justify-between items-center">
-                    <a class="flex justify-between items-center" href="">
-                      <img
-                        class="w-10 h-10 rounded-full object-cover"
-                        src="./../../dist/avatar/nis.png"
-                        alt="Avatar"
-                      />
-                      <div class="ml-3">
-                        <p class="text-gray-700 text-sm block leading-none">
-                          Mariana Azevedo
-                        </p>
-                        <small class="text-xs text-gray-600"
-                          >Today - 3 Minutes read</small
-                        >
-                      </div>
-                    </a>
-                    <div>
-                      <button
-                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                      >
-                        <i class="bx bx-bookmark text-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="my-4">
-                  <a href="" class="font-bold text-gray-700 text-xl">
-                    S.O.L.I.D principles: what are they and why projects should
-                    use them
-                  </a>
-                </div>
-
-                <div class="my-4">
-                  <p class="text-gray-600 my-2">
-                    At level zero you know nothing, however when you learn a
-                    thing or two basic things about programming, you now get to
-                    level 1 ...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="md:w-1/3">
-            <div class="bg-white border rounded m-4">
-              <div class="m-4">
-                <div class="flex justify-between items-center">
-                  <a class="flex justify-between items-center" href="">
-                    <img
-                      class="w-10 h-10 rounded-full object-cover"
-                      src="./../../dist/avatar/nis.png"
-                      alt="Avatar"
-                    />
-                    <div class="ml-3">
-                      <p class="text-gray-700 text-sm block leading-none">
-                        Mariana Azevedo
-                      </p>
-                      <small class="text-xs text-gray-600"
-                        >Today - 3 Minutes read</small
-                      >
-                    </div>
-                  </a>
-                  <div>
-                    <button
-                      class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                    >
-                      <i class="bx bx-bookmark text-xl"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <a href="">
-                <img
-                  class="h-48 w-full object-cover"
-                  src="./../../dist/images/4.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="m-4">
-                <div>
-                  <a href="" class="font-bold text-gray-700 text-xl">
-                    S.O.L.I.D principles: what are they and why projects should
-                    use them
-                  </a>
-                </div>
-                <div class="my-4">
-                  <p class="text-gray-600 my-2">
-                    At level zero you know nothing, however when you learn a
-                    thing or two basic things about programming, you now get to
-                    level 1 ...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/3">
-            <div class="bg-white border rounded m-4">
-              <div class="m-4">
-                <div>
-                  <a href="" class="font-bold text-gray-700 text-xl">
-                    S.O.L.I.D principles: what are they and why projects should
-                    use them
-                  </a>
-                </div>
-                <div class="my-4">
-                  <p class="text-gray-600 my-2">
-                    At level zero you know nothing, however when you learn a
-                    thing or two basic things about programming, you now get to
-                    level 1 ...
-                  </p>
-                </div>
-                <div>
-                  <div class="flex justify-between items-center">
-                    <a class="flex justify-between items-center" href="">
-                      <img
-                        class="w-10 h-10 rounded-full object-cover"
-                        src="./../../dist/avatar/nis.png"
-                        alt="Avatar"
-                      />
-                      <div class="ml-3">
-                        <p class="text-gray-700 text-sm block leading-none">
-                          Mariana Azevedo
-                        </p>
-                        <small class="text-xs text-gray-600"
-                          >Today - 3 Minutes read</small
-                        >
-                      </div>
-                    </a>
-                    <div>
-                      <button
-                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                      >
-                        <i class="bx bx-bookmark text-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/3">
-            <div class="bg-white border rounded m-4">
-              <div class="m-4">
-                <div>
-                  <a href="" class="font-bold text-gray-700 text-xl"
-                    >Talk is cheap. Show me the code - Linus Torvalds
-                  </a>
-                </div>
-                <div class="my-4">
-                  <p class="text-gray-600 my-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo, ex autem? Nisi minus porro pariatur quaerat officia
-                    asperiores officiis...
-                  </p>
-                </div>
-                <div>
-                  <div class="flex justify-between items-center">
-                    <a class="flex justify-between items-center" href="">
-                      <img
-                        class="w-10 h-10 rounded-full object-cover"
-                        src="./../../dist/avatar/nis.png"
-                        alt="Avatar"
-                      />
-                      <div class="ml-3">
-                        <p class="text-gray-700 text-sm block leading-none">
-                          Mariana Azevedo
-                        </p>
-                        <small class="text-xs text-gray-600"
-                          >Today - 3 Minutes read</small
-                        >
-                      </div>
-                    </a>
-                    <div>
-                      <button
-                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                      >
-                        <i class="bx bx-bookmark text-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/3">
-            <div class="bg-white border rounded m-4">
-              <div class="m-4">
-                <div>
-                  <a href="" class="font-bold text-gray-700 text-xl">
-                    I suck at programming, but I love it. What should I do?
-                  </a>
-                </div>
-                <div class="my-4">
-                  <p class="text-gray-600 my-2">
-                    At level zero you know nothing, however when you learn a
-                    thing or two basic things about programming, you now get to
-                    level 1 ...
-                  </p>
-                </div>
-                <div>
-                  <div class="flex justify-between items-center">
-                    <a class="flex justify-between items-center" href="">
-                      <img
-                        class="w-10 h-10 rounded-full object-cover"
-                        src="./../../dist/avatar/nis.png"
-                        alt="Avatar"
-                      />
-                      <div class="ml-3">
-                        <p class="text-gray-700 text-sm block leading-none">
-                          Mariana Azevedo
-                        </p>
-                        <small class="text-xs text-gray-600"
-                          >Today - 3 Minutes read</small
-                        >
-                      </div>
-                    </a>
-                    <div>
-                      <button
-                        class="text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline-blue active:text-gray-700 transition duration-150 ease-in-out m-1 inline-flex items-center"
-                      >
-                        <i class="bx bx-bookmark text-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Content -->
     </div>
     <!-- End wrapper -->
     <!-- Footer -->
-    <div class="max-w-screen-xl mx-auto">
+    <div class="max-w-screen-xl mx-auto mb-4">
       <div class="mt-4 mx-2 flex justify-between items-center">
-        <div>MIT License- Copyright (c) 2020 <b>Under-X</b></div>
+        <div class="text-gray-600">
+          MIT License- Copyright (c) 2021
+          <strong class="font-bold">Under-X</strong>
+        </div>
       </div>
     </div>
     <!-- End footer -->

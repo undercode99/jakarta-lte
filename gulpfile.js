@@ -1,12 +1,16 @@
+const fs = require("fs");
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
 const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
+const ejs = require("gulp-ejs");
 const uglify = require("gulp-uglify");
 const npmDist = require("gulp-npm-dist");
 const postcss = require("gulp-postcss");
 const { copyLibs } = require("gulp-copy-libs");
+const YAML = require("yaml");
+const prettier = require("gulp-prettier");
 
 // Compile src sass
 gulp.task("compile:sass", function () {
@@ -63,18 +67,59 @@ gulp.task("copy:libs", function () {
   );
 });
 
-// task build
-gulp.task("build", gulp.series("copy:libs", "compile:sass", "compile:js"));
+// build html
+gulp.task("ejs_compile:html", function () {
+  const file = fs.readFileSync("./config-template.yml", "utf8");
+  const data_content = YAML.parse(file);
 
-// task serve browsersync
+  function menu_builder(x) {
+    return x;
+  }
+
+  let func_helper = {
+    menu_builder,
+  };
+
+  return gulp
+    .src("./src/templates/*.ejs")
+    .pipe(ejs({ ...data_content, ...func_helper }))
+    .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.dest("./pages"));
+});
+
+// Beauty html
+gulp.task("prettier:html", function () {
+  return gulp
+    .src("./pages/**/*.html")
+    .pipe(prettier({}))
+    .pipe(gulp.dest("./pages"));
+});
+
+// task build
+gulp.task(
+  "build",
+  gulp.series(
+    "copy:libs",
+    "compile:sass",
+    "compile:js",
+    "ejs_compile:html",
+    "prettier:html"
+  )
+);
+
+// task serve browser sync
 gulp.task(
   "serve",
   gulp.series("build", function () {
     browserSync.init({ server: "." });
-    gulp.watch("./src/js/**/*.js",gulp.series("compile:js"))
-    gulp.watch("./src/scss/**/*.scss",gulp.series("compile:sass"))
-    gulp.watch("./*.html").on("change", browserSync.reload);
-    gulp.watch("./pages/**/**/*.html").on("change", browserSync.reload);
+    gulp.watch("./src/js/**/*.js", gulp.series("compile:js"));
+    gulp.watch("./src/scss/**/*.scss", gulp.series("compile:sass"));
+    gulp
+      .watch(
+        ["./src/templates/**/*.ejs"],
+        gulp.series(["ejs_compile:html", "prettier:html"])
+      )
+      .on("change", browserSync.reload);
   })
 );
 

@@ -1,0 +1,44 @@
+<div class="inline-block relative text-left">
+  <a
+    class="flex items-center mx-2 dropdown-toggle"
+    href=""
+    data-dropdown="dropDownMenu"
+  >
+    <img
+      class="w-8 h-8 mr-3 rounded-full object-cover"
+      src="<%= content.avatar %>"
+      alt="Avatar"
+    />
+    <div class="mt-1 hidden md:block">
+      <div class="leading-3 text-sm text-gray-700"><%= content.profile %></div>
+      <small class="text-xs text-gray-500"><%= content.sub_profile %></small>
+    </div>
+  </a>
+
+  <div
+    class="origin-top-right absolute right-0 mt-3 z-56 w-56 rounded-md shadow-lg hidden"
+    id="dropDownMenu"
+  >
+    <div
+      class="rounded-md bg-white shadow-xs"
+      role="menu"
+      aria-orientation="vertical"
+      aria-labelledby="options-menu"
+    >
+      <div class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+          role="menuitem"
+          >Settings</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+          role="menuitem"
+          >Logout</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

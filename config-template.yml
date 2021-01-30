@@ -1,0 +1,38 @@
+header: 
+  title: "Jakarta LTE - Free and Open Source Premium Admin Templates with rich UI Kit base on Tailwind CSS"
+content:
+  brand: "Jakarta"
+  sub_brand: "LTE"
+  avatar: "./../dist/avatar/nis.png"
+  profile: "Zero Black Coder"
+  sub_profile: "Anggota DPR"
+lorem:
+  l6: "Lorem ipsum dolor sit amet"
+  l5: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  l4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+  l3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  l2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+  l1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+config_themes: 
+  - name: "green"
+    background: "bg-gray-100"
+    color:
+      background: "bg-green-500"
+      background_active: "text-green-500"
+      background_hover: "hover:bg-green-400"
+
+      text: "text-white"
+      text_active: "text-green-500"
+      
+      border: "border-green-500"
+      border_active: "border-green-500"
+      border_hover: "hover:border-green-400"
+      
+active_themes: "green"
+
+    
+
+    
+    
+  
