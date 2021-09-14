@@ -5,7 +5,7 @@ Free and Open Source Premium Admin Templates with rich UI Kit base on Tailwind C
 ![Screenshot](/screenshot.png?raw=true)
 
 ## Demo
-https://zeroblack-c.github.io/jakarta-lte/
+https://undercode99.github.io/jakarta-lte/
 
 
 ## Development Guide
